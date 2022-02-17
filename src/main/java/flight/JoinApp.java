@@ -21,6 +21,9 @@ public class JoinApp {
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, AirportMapper.class);
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
 
-        job.
+        job.setOutputKeyClass(Text.class);
+        job.setOutputValueClass(Text.class);
+
+        System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
