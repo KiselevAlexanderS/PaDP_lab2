@@ -1,2 +1,4 @@
-package flight;public class AirportWritable {
+package flight;
+
+public class AirportWritable {
 }
