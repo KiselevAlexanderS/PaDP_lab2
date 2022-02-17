@@ -1,2 +1,4 @@
-package flight;public class AirportReducer {
+package flight;
+
+public class AirportReducer {
 }
