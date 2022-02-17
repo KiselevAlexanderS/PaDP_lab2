@@ -13,7 +13,7 @@ public class AirportReducer extends Reducer<AirportWritable, Text, Text, Text> {
         float sum = 0;
         float min = 0;
         float max = Float.MAX_VALUE;
-        Iterator iterator = values.iterator();
+        Iterator iterator = val.iterator();
         Text name = new Text(iterator.next().toString());
         while (iterator.hasNext()){
             float delay = Float.parseFloat(iterator.next().toString());
