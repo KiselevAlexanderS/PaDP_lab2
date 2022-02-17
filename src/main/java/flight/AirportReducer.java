@@ -24,7 +24,7 @@ public class AirportReducer extends Reducer<AirportWritable, Text, Text, Text> {
         }
         if (count > 0) {
             sum /= count;
-            context.write(name, new Text());
+            context.write(name, new Text(min + " , " + sum + "\n"));
         }
     }
 }
