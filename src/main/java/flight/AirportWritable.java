@@ -12,12 +12,17 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
     private int indicator;
 
     AirportWritable(){
-        
+
+    }
+
+    AirportWritable(int Air_ID, int indicator) {
+        this.Air_ID = Air_ID;
+        this.indicator = indicator;
     }
 
     @Override
     public void write(DataOutput data) throws IOException {
-
+    
     }
 
     @Override
