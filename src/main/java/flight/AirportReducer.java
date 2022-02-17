@@ -22,5 +22,9 @@ public class AirportReducer extends Reducer<AirportWritable, Text, Text, Text> {
             max = Math.max(delay,max);
             min = Math.min(delay,min);
         }
+        if (count > 0) {
+            sum /= count;
+            context.write(name, new Text());
+        }
     }
 }
