@@ -40,6 +40,8 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
         return indicator;
     }
 
+    
+
     public int getAir_ID() {
         return Air_ID;
     }
