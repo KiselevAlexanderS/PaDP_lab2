@@ -1,4 +1,8 @@
 package flight;
 
-public class AirportReducer extends{
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
+
+public class AirportReducer extends Reducer<AirportWritable, Text, Text, Text> {
+    protected void reduce()
 }
