@@ -8,6 +8,6 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class JoinApp {
     public static void main(String[] args) throws Exception {
-        a
+        a dsdsdsdsdsd
     }
 }
