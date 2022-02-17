@@ -10,8 +10,8 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class JoinApp {
     public static void main(String[] args) throws Exception {
-        if (args.length != 2) {
-            System.err.println("JoinApp <input path> <output path>");
+        if (args.length != 3) {
+            System.err.println("JoinApp <input path> <input path> <output path>");
             System.exit(-1);
         }
         Job job = Job.getInstance();

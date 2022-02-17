@@ -16,6 +16,6 @@ public class AirportWritable implements WritableComparable {
     }
 
     public void readFields(DataInput data) throws IOException {
-        
+
     }
 }
