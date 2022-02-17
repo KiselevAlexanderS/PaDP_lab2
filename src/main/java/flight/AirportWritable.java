@@ -34,6 +34,8 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
 
     @Override
     public int compareTo(AirportWritable o) {
+        int first = this.Air_ID - o.Air_ID;
+        int second = this.indicator - o.indicator;
         return 0;
     }
 }
