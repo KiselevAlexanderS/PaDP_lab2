@@ -40,7 +40,9 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
         return indicator;
     }
 
-    
+    public void setAir_ID() {
+        this.Air_ID = Air_ID;
+    }
 
     public int getAir_ID() {
         return Air_ID;
