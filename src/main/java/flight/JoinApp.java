@@ -10,7 +10,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import java.io.IOException;
 
 public class JoinApp {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, InterruptedException, ClassNotFoundException {
         if (args.length != 3) {
             System.err.println("JoinApp <input path> <input path> <output path>");
             System.exit(-1);
