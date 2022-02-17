@@ -23,7 +23,6 @@ public class JoinApp {
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);
-
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
