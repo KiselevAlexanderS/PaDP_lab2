@@ -11,9 +11,7 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
     private int Air_ID;
     private int indicator;
 
-    AirportWritable(){
-
-    }
+    AirportWritable(){}
 
     AirportWritable(int Air_ID, int indicator) {
         this.Air_ID = Air_ID;
