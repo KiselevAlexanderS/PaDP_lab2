@@ -28,7 +28,8 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
 
     @Override
     public void readFields(DataInput data) throws IOException {
-
+        Air_ID = data.readInt();
+        indicator = data.readInt();
     }
 
     @Override
