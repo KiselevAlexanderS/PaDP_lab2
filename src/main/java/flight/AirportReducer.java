@@ -8,7 +8,7 @@ import java.util.Iterator;
 
 
 public class AirportReducer extends Reducer<AirportWritable, Text, Text, Text> {
-    protected void reduce(AirportWritable key, Iterable<Text> val, Context context) throws IOException {
+    protected void reduce(AirportWritable key, Iterable<Text> val, Context context) throws IOException, InterruptedException {
         long count = 0;
         float sum = 0;
         float min = 0;
