@@ -32,6 +32,10 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
         indicator = data.readInt();
     }
 
+    public void setIndicator(int indicator) {
+        this.indicator = indicator;
+    }
+
     public int getIndicator() {
         return indicator;
     }
