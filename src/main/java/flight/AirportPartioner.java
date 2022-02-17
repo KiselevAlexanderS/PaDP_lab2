@@ -1,2 +1,4 @@
-package flight;public class AirportPartioner {
+package flight;
+
+public class AirportPartioner extends Partioner<AirportWritable, Text>{
 }
