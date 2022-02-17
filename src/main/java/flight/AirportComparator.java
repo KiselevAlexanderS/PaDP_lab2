@@ -1,2 +1,9 @@
-package flight;public class AirportComparator {
+package flight;
+
+import org.apache.hadoop.io.WritableComparator;
+
+public class AirportComparator extends WritableComparator {
+    protected AirportComparator() {
+
+    }
 }
