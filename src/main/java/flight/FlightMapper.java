@@ -1,2 +1,5 @@
-package flight;public class FlightMapper {
+package flight;
+
+public class FlightMapper {
+
 }
