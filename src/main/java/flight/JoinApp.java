@@ -8,6 +8,9 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
 public class JoinApp {
     public static void main(String[] args) throws Exception {
-        a asd
+        if (args.length != 2) {
+            System.err.println("JoinApp <input path> <output path>");
+            System.exit(-1);
+        }
     }
 }
