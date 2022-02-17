@@ -11,9 +11,8 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
     private int Air_ID;
     private int indicator;
 
-    @Override
-    public int compareTo(Object o) {
-        return 0;
+    AirportWritable(){
+        
     }
 
     @Override
@@ -24,5 +23,10 @@ public class AirportWritable implements WritableComparable<AirportWritable> {
     @Override
     public void readFields(DataInput data) throws IOException {
 
+    }
+
+    @Override
+    public int compareTo(AirportWritable o) {
+        return 0;
     }
 }
