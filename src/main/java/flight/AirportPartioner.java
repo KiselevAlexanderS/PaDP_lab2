@@ -1,4 +1,12 @@
 package flight;
 
-public class AirportPartioner extends Partioner<AirportWritable, Text>{
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Partitioner;
+
+public class AirportPartioner extends Partitioner<AirportWritable, Text>{
+
+    @Override
+    public int getPartition(AirportWritable airportWritable, Text text, int i) {
+        return 0;
+    }
 }
